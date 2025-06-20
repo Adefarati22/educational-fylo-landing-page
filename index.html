@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Fylo landing page</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-[Open_Sans] font-[400] bg-[#ffffff] text-[16px] min-h-screen"
+  >
+    <nav class="container mx-auto px-8 lg:px-15 lg:py-10 py-6">
+      <header class="flex justify-between items-center">
+        <img src="./images/logo.svg" alt="fylo-logo" class="h-6 md:h-10" />
+        <ul class="flex lg:gap-12 gap-4 font-[Raleway_sans] font-[400]">
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign in</li>
+        </ul>
+      </header>
+    </nav>
+    <main>
+      <!-- Section-1 -->
+      <section class="container mx-auto px-8 lg:px-15 lg:py-10 py-6">
+        <div
+          class="lg:grid grid-cols-2 flex flex-col-reverse lg:flex-row items-center"
+        >
+          <!-- section-1-contact-div -->
+          <div
+            class="cols-span-3 space-y-6 lg:space-y-4 flex flex-col py-6 lg:py-0"
+          >
+            <h1
+              class="font-[Raleway_sans] font-[700] text-[30px] md:text-[40px] text-[#070439] w-90 md:w-130 text-center md:text-left"
+            >
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p
+              class="text-[#070439] leading-loose md:leading-relaxed lg:w-135 text-center md:text-start"
+            >
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form class="w-full flex flex-col lg:flex-row gap-4">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email..."
+                required
+                class="px-4 py-2 border-2 rounded-sm md:w-70"
+              />
+              <button
+                class="bg-[#3065f8] text-center py-3 md:w-50 rounded-sm text-[#ffffff] cursor-pointer hover:bg-[#83a3fc]"
+                type="submit"
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+          <!-- hero-1 -->
+          <img src="./images/illustration-1.svg" alt="hero-1" />
+        </div>
+      </section>
+      <!-- Section-2 -->
+      <section
+        class="bg-[url('./images/bg-curve-mobile.svg')] lg:bg-[url('./images/bg-curve-desktop.svg')] w-full h-auto bg-center bg-cover mt-20"
+      >
+        <div class="container mx-auto px-8 md:px-15 md:py-10 py-6">
+          <div
+            class="lg:grid grid-cols-2 flex flex-col-reverse lg:flex-row items-center"
+          >
+            <div
+              class="cols-span-3 lg:space-y-6 flex flex-col gap-2 py-6 lg:py-0"
+            >
+              <h1
+                class="font-[Raleway_sans] font-[700] text-[1.2rem] md:text-[35px] text-[#070439] w- text-center md:text-left my-5"
+              >
+                Stay productive, wherever you are
+              </h1>
+              <p
+                class="text-[15px] md:text-[16px] text-[#bfbfbf] md:text-[#070439] leading-loose md:leading-relaxed md:w-135"
+              >
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+              </p>
+              <p
+                class="text-[15px] md:text-[16px] text-[#bfbfbf] md:text-[#070439] leading-loose md:leading-relaxed md:w-135"
+              >
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!
+              </p>
+              <!-- link-div -->
+              <div
+                class="flex space-x-2 text-[#3c9f8f] underline cursor-pointer justify-center md:justify-start my-5"
+              >
+                <a href="#">See how Fylo works</a>
+                <img src="./images/icon-arrow.svg" alt="arrow-left" />
+              </div>
+              <!-- review-div -->
+              <div
+                class="bg-[#ffffff] md:h-[20rem] md:w-[60%] px-4 md:px-10 py-2 md:py-8 space-y-4 md:space-y-8"
+              >
+                <img src="./images/icon-quotes.svg" alt="quotes" />
+                <p
+                  class="text-[#070439] leading-loose md:leading-relaxed w-full"
+                >
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <!-- customer-image-div -->
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="./images/avatar-testimonial.jpg"
+                    alt="avatar"
+                    class="rounded-full h-[4rem]"
+                  />
+                  <div class="text-[#070439]">
+                    <h3
+                      class="font-[Raleway_sans] font-[700] text-[20px] text-[#070439]"
+                    >
+                      Kyle Burton
+                    </h3>
+                    <p class="text-[#070439]">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hero-2 -->
+            <img src="./images/illustration-2.svg" alt="hero-2" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- section-register -->
+    <section class="bg-[#585989] min-h-[250px]">
+      <div class="container mx-auto px-8 md:px-15 md:py-10 py-6">
+        <div
+          class="lg:flex flex-col lg:flex-row justify-between items-center my-10"
+        >
+          <div class="w-full lg:w-[48%]">
+            <h1
+              class="font-[Raleway_sans] font-[700] text-[30px] md:text-[40px] text-[#ffffff] w-90 md:w-130 text-center md:text-left"
+            >
+              Get early access today
+            </h1>
+            <p class="text-[#ffffff] leading-loose text-center md:text-left">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <form class="w-full md:w-[48%] flex flex-col gap-4 mt-6 lg:mt-0">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email..."
+              required
+              class="bg-[#ffffff] px-4 py-2 rounded-sm md:w-70 lg:w-[550px]"
+            />
+            <button
+              class="bg-[#3065f8] text-center py-3 md:w-50 rounded-sm text-[#ffffff] cursor-pointer hover:bg-[#83a3fc]"
+              type="submit"
+            >
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#070439] min-h-[477px] text-[#f6f6fe]">
+      <div
+        class="container mx-auto px-8 md:px-15 md:py-10 py-6 lg:flex justify-center gap-30"
+      >
+        <!-- reach-out -->
+        <section class="space-y-6 py-15">
+          <div><img src="./images/logo-2.svg" alt="fylo-logo" /></div>
+          <div class="flex space-x-2">
+            <img src="./images/icon-phone.svg" alt="phone-logo" />
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="flex space-x-2">
+            <img src="./images/icon-email.svg" alt="email-logo" />
+            <p>example@fylo.com</p>
+          </div>
+        </section>
+
+        <!-- reach-out -->
+
+        <section class="lg:grid grid-cols-3 gap-50 lg:py-35">
+          <!-- about-us -->
+          <div class="space-y-6">
+            <p class="cursor-pointer hover:text-[#585989]">About Us</p>
+            <p class="cursor-pointer hover:text-[#585989]">Jobs</p>
+            <p class="cursor-pointer hover:text-[#585989]">Press</p>
+            <p class="cursor-pointer hover:text-[#585989]">Blog</p>
+          </div>
+          <!-- contact-us -->
+          <div class="space-y-6 py-10 lg:py-0">
+            <p class="cursor-pointer hover:text-[#585989]">Contact us</p>
+            <p class="cursor-pointer hover:text-[#585989]">Terms</p>
+            <p class="cursor-pointer hover:text-[#585989]">Privacy</p>
+          </div>
+          <!-- social-media-logos -->
+          <div class="flex gap-4 h-10 justify-center mb-8 lg:mb-0">
+            <img
+              src="./images/icons8-facebook.svg"
+              alt="f-logo"
+              class="cursor-pointer hover:-[#585989]"
+            />
+            <img
+              src="./images/icons8-twitter-circled.svg"
+              alt="t-logo"
+              class="cursor-pointer group-hover:text-[#585989]"
+            />
+            <img
+              src="./images/icons8-instagram-circle-50.svg"
+              alt="I-logo"
+              class="cursor-pointer hover:text-[#585989]"
+            />
+          </div>
+        </section>
+      </div>
+      <div class="mt-4 px-4">
+        <p
+          class="bg-red-100 text-red-700 font-semibold rounded-md p-3 inline-block"
+        >
+          Disclaimer: This work is for educational purposes only, is not
+          intended for fraudulent activities, and is in no way associated with
+          Fylo.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
